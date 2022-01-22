@@ -1,10 +1,10 @@
 # Pascal Reents | 21.01.2022
-# Aufgabe: Eine zufällige Zahl zwischen 0 und 100 durch Spieler*in erraten lassen
+# Aufgabe: Eine zufaellige Zahl zwischen 0 und 100 durch Spieler*in erraten lassen
 import random
 
 
 def user_input():
-    # prüft Eingabe - nur reelle Zahlen von 0 - 100 sind erlaubt
+    # prueft Eingabe - nur reelle Zahlen von 0 - 100 sind erlaubt
     while True:
         try:
             user_choice = int(input("Dein Tipp: "))
@@ -23,7 +23,7 @@ def guess_number():
 
     print("Das Spiel hat eine zufaellige Zahl zwischen 0 und 100 generiert.")
     while True:
-        # Zählt die gebrauchten Versuche (Fehlerhafte Eingaben zaehlen nicht als Versuch)
+        # Zaehlt die gebrauchten Versuche (Fehlerhafte Eingaben zaehlen nicht als Versuch)
         attempts += 1
         user_choice = user_input()
         if user_choice != wanted_number:
